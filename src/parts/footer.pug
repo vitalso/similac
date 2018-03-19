@@ -1,0 +1,15 @@
+.bottom__nav
+	a(href="screen-2.html") Подобрать смесь
+	a(href="calculate.html") Калькулятор смеси
+	a(href="products.html") Similac
+
+#warning.mfp-hide.white-popup-block
+	p Помните, что данный сервис носит рекомендательный характер – все изменения в рацион малыша нужно вносить после согласования с педиатром!
+	p.brand__color <strong>ВАЖНО:</strong> дети старше 6 месяцев должны получать дополнительное питание (прикорм) помимо грудного молока или смеси.
+	form(action="#").warning__form.text-center
+		.form__el
+			input(type="checkbox" , name="choice-warning" , id="check")
+			span
+			label(for="check") Я согласна
+	p
+		a(href="screen-3.html").primary__btn.is-disabled.popup-modal-dismiss Хорошо
