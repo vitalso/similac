@@ -25,7 +25,7 @@ html(lang='en')
 
 				.content__inner.transparent
 					ul.pagination
-						li: span.active
+					//	li: span.active
 						li: span
 						li: span
 						li: span
@@ -39,16 +39,17 @@ html(lang='en')
 							.form__el
 								input(type="text" , name="birth-date" , id="date" , placeholder="__.__.____")
 								a(href="#").primary__btn Далее
+
 						form(action="#").choice__form.is-hidden
 							// Section 1
 							#question-1.form__section
 								h1.title.text-center Ваш ребенок родился раньше срока?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="1")
+									input(type="radio" , name="choice-input" , value="yes" , id="1" , data-href="https://www.google.com")
 									span
 									label(for="1") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="2" , checked)
+									input(type="radio" , name="choice-input" , value="no" , id="2" , data-href="" , checked="true")
 									span
 									label(for="2") Нет
 								a(href="#").primary__btn.next__btn Далее
@@ -57,11 +58,11 @@ html(lang='en')
 							#question-2.form__section
 								h1.title.text-center Беспокоят ли вас срыгивания у малыша?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="3")
+									input(type="radio" , name="choice-input" , value="yes" , data-href="https://www.google.com" , id="3")
 									span
 									label(for="3") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="4" , checked)
+									input(type="radio" , name="choice-input" , value="no" , id="4" , data-href="")
 									span
 									label(for="4") Нет
 								a(href="#").primary__btn.next__btn Далее
@@ -70,11 +71,11 @@ html(lang='en')
 							#question-3.form__section
 								h1.title.text-center Подтвержден ли врачом диагноз аллергия к белку коровьего молока у малыша?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="5")
+									input(type="radio" , name="choice-input" , value="yes" , data-href="https://www.google.com" , id="5")
 									span
 									label(for="5") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="6" , checked)
+									input(type="radio" , name="choice-input" , value="no" , data-href="" , id="6")
 									span
 									label(for="6") Нет
 								a(href="#").primary__btn.next__btn Далее
@@ -83,11 +84,11 @@ html(lang='en')
 							#question-4.form__section
 								h1.title.text-center Подтвержден ли диагноз лактазная недостаточность у малыша?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="7")
+									input(type="radio" , name="choice-input" , value="yes" , data-href="https://www.google.com" , id="7")
 									span
 									label(for="7") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="8" , checked)
+									input(type="radio" , name="choice-input" , value="no" , data-href="" , id="8")
 									span
 									label(for="8") Нет
 								a(href="#").primary__btn.next__btn Далее
@@ -96,11 +97,11 @@ html(lang='en')
 							#question-5.form__section
 								h1.title.text-center Беспокоят ли вас нерегулярный стул или колики, или газообразование у малыша?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="9")
+									input(type="radio" , name="choice-input" , value="yes" , data-href="https://www.google.com" , id="9")
 									span
 									label(for="9") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="10" , checked)
+									input(type="radio" , name="choice-input" , value="no" , data-href="" , id="10")
 									span
 									label(for="10") Нет
 								a(href="#").primary__btn.next__btn Далее
@@ -109,11 +110,11 @@ html(lang='en')
 							#question-6.form__section
 								h1.title.text-center У родителей или старших братьев и сестер есть аллергические заболевания?
 								.form__el
-									input(type="radio" , name="choice-input" , value="yes" , id="11")
+									input(type="radio" , name="choice-input" , value="yes" , data-href="https://www.google.com" , id="11")
 									span
 									label(for="11") Да
 								.form__el
-									input(type="radio" , name="choice-input" , value="no" , id="12" , checked)
+									input(type="radio" , name="choice-input" , value="no" , data-href="" , id="12")
 									span
 									label(for="12") Нет
 								a(href="#").primary__btn.next__btn Далее

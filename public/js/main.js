@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var current_page = 0;
+
 	$("#date").mask("99.99.9999", {placeholder: "__.__.____" });
 
 	$('a[href="#warning"]').magnificPopup({
@@ -10,6 +12,14 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.magnificPopup.close();
 	});*/
+
+	var steps = $('.choice__form .form__section').length;
+	for (i=1; i <= steps; i++) {
+		$('.pagination').append("<li><span></span></li>")
+	}
+	$('.pagination li:eq(0)').addClass('active');
+	
+	console.log(steps);
 
 	$('.warning__form input[type="checkbox"]').change(function(){
 		var status = $(this).prop('checked');
@@ -36,71 +46,23 @@ $(document).ready(function(){
 	    return false;
 	});
 
-	$('#question-1 .next__btn').click(function(){
-		if($('#question-1 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
+	$('.form__section .next__btn').click(function(){
+		if ( $(this).closest('div').find('input:radio:eq(0)').prop('checked') == false &&  $(this).closest('div').find('input:radio:eq(1)').prop('checked') == false ) {
+			console.log('fffff')
 		} else {
-			$('#question-1').addClass('is-hidden');
-			$('#question-2').show();
-		}
 
-		return false;
-	})
+			if ( $(this).closest('div').find('input:radio:checked').attr('data-href') == '' ) {
+				$(this).closest('div').addClass('is-hidden');
+				$(this).closest('div').next('.form__section').show();
+				// Pagination
+				$('.pagination li').removeClass('active');
+				$('.pagination li').eq(current_page + 1).addClass('active');
+				current_page++;
+			} else {
+				document.location = $(this).closest('div').find('input[name="choice-input"]:checked').attr('data-href');
+			}
 
-	$('#question-2 .next__btn').click(function(){
-
-		if($('#question-2 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
-		} else {
-			$('#question-2').addClass('is-hidden');
-			$('#question-3').show();
-		}
-
-		return false;
-	})
-
-	$('#question-3 .next__btn').click(function(){
-
-		if($('#question-3 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
-		} else {
-			$('#question-3').addClass('is-hidden');
-			$('#question-4').show();
-		}
-
-		return false;
-	})
-
-	$('#question-4 .next__btn').click(function(){
-
-		if($('#question-4 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
-		} else {
-			$('#question-4').addClass('is-hidden');
-			$('#question-5').show();
-		}
-
-		return false;
-	})
-
-	$('#question-5 .next__btn').click(function(){
-
-		if($('#question-5 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
-		} else {
-			$('#question-5').addClass('is-hidden');
-			$('#question-6').show();
-		}
-
-		return false;
-	})
-
-	$('#question-6 .next__btn').click(function(){
-
-		if($('#question-6 input[name="choice-input"]:checked').val() == 'yes') {
-			document.location = 'https://www.google.com'
-		} else {
-			document.location = 'http://localhost:3000/recomend.html'
+			console.log('ggggg')
 		}
 
 		return false;

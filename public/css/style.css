@@ -272,6 +272,8 @@ header {
     display: inline-block;
     vertical-align: top;
     margin: 0 5px; }
+    .pagination li.active span {
+      background-image: linear-gradient(to bottom, #d8b340, #c99554); }
   .pagination span {
     width: 13px;
     height: 13px;
@@ -279,8 +281,6 @@ header {
     background-color: #f5ebd1;
     -webkit-border-radius: 50%;
     border-radius: 50%; }
-    .pagination span.active {
-      background-image: linear-gradient(to bottom, #d8b340, #c99554); }
 
 .choice__form {
   padding: 0 35px; }

@@ -312,6 +312,9 @@ header {
 					display: inline-block;
 					vertical-align: top;
 					margin: 0 5px;
+					&.active span {
+						background-image: linear-gradient(to bottom, #d8b340, #c99554);
+					}
 				}
 				span {
 					width: 13px;
@@ -320,9 +323,6 @@ header {
 					background-color: #f5ebd1;
 					-webkit-border-radius: 50%;
 					        border-radius: 50%;
-						&.active {
-							background-image: linear-gradient(to bottom, #d8b340, #c99554);
-						}
 				}
 		}
 
