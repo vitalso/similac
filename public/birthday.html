@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>product detail</title>
+    <title>index</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,23 +19,25 @@
     <div class="page">
       <header>Navigation Mom.life</header>
       <div class="content">
-        <div class="content__inner">
-          <h1 class="title text-center">Вам может подойти</h1>
+        <div class="content__header">
+          <div class="header__person">
+            <div class="person__name">Миша</div>
+            <div class="person__years">3 месяца</div>
+          </div>
+          <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="Similac Premium"></a></div>
+        </div>
+        <div class="content__inner transparent">
+          <ul class="pagination"></ul>
           <div class="inner__wrap">
-            <div class="recomend">
-              <div class="recomend__img"><img src="images/A_NeoShur.png" alt="Similac"></div>
-              <p>Молочная смесь для решения проблем с набором веса Similac НеоШур рекомендуется при недостаточной ежемесячной прибавке веса ребенка и для детей, рожденных раньше срокас весом при рождении более 1800 г. или при достижении веса 1800 г.</p>
-            </div>
-            <p class="recomend__atention brand__color text-center">Помните, что сервис носит информационный характер. Данная смесь является специализированной и лечебной, поэтому только врач может назначить малышу эту смесь</p>
-            <form class="warning__form text-center" action="#">
+            <form class="date__birth" action="#" id="date-choice">
+              <h1 class="title text-center">Дата рождения</h1>
               <div class="form__el">
-                <input type="checkbox" name="choice-warning" id="check"><span></span>
-                <label for="check">Я согласна</label>
+                <input type="text" name="birth-date" id="date" placeholder="__.__.____">
+                <input class="primary__btn" type="submit" value="Далее">
               </div>
-              <p><a class="primary__btn is-disabled popup-modal-dismiss" href="#">Рассчитать смесь</a></p>
             </form>
           </div>
-        </div><a class="primary__btn light__btn" href="screen-3.html">Пройти тест еще раз</a>
+        </div>
         <div class="page__description"><strong>Грудное молоко – лучшее питание для ребёнка, его необходимо сохранять как можно дольше.</strong> Если грудное вскармливание невозможно, педиатр поможет Вам подобрать молочную смесь, по составу и свойствам, приближенную к грудному молоку.</div>
       </div>
       <div class="bottom__nav"><a href="screen-2.html">Подобрать смесь</a><a href="calculate.html">Калькулятор смеси</a><a href="products.html">Similac</a></div>

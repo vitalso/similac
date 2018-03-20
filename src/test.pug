@@ -23,24 +23,11 @@ html(lang='en')
 
 				include parts/header.pug
 
-				.content__inner.transparent
+				.content__inner
 					ul.pagination
-					//	li: span.active
-						li: span
-						li: span
-						li: span
-						li: span
-						li: span
-						li: span
 
 					.inner__wrap
-						form(action="#")#date-choice.date__birth
-							h1.title.text-center Дата рождения
-							.form__el
-								input(type="text" , name="birth-date" , id="date" , placeholder="__.__.____")
-								a(href="#").primary__btn Далее
-
-						form(action="#").choice__form.is-hidden
+						form(action="#")#test-form.choice__form
 							// Section 1
 							#question-1.form__section
 								h1.title.text-center Ваш ребенок родился раньше срока?
@@ -117,7 +104,7 @@ html(lang='en')
 									input(type="radio" , name="choice-input" , value="no" , data-href="" , id="12")
 									span
 									label(for="12") Нет
-								a(href="#").primary__btn.next__btn Далее
+								input(type="submit" , value="Далее").primary__btn#send-question
 
 				.page__description
 					<strong>Грудное молоко – лучшее питание для ребёнка, его необходимо сохранять как можно дольше.</strong> Если грудное вскармливание невозможно, педиатр поможет Вам подобрать молочную смесь, по составу и свойствам, приближенную к грудному молоку.

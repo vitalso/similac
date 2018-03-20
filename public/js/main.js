@@ -32,40 +32,46 @@ $(document).ready(function(){
 		console.log(status);
 	});
 
-	$('#date-choice .primary__btn').click(function()
-	{
+	$('#date-choice input:submit').click(function(){
+
 	    if( $('.date__birth input[type="text"]').val().length < 8 ) {
-	        console.log('error')
+	        return false;
 	    } else {
-	    	$('.content__inner').removeClass('transparent');
-	    	$(this).closest('form').addClass('is-hidden');
-	    	$(this).closest('form').next('form').removeClass('is-hidden');
-	    	console.log('cool')
+	    	$('#date-choice').submit();
 	    }
 
-	    return false;
 	});
 
 	$('.form__section .next__btn').click(function(){
+
 		if ( $(this).closest('div').find('input:radio:eq(0)').prop('checked') == false &&  $(this).closest('div').find('input:radio:eq(1)').prop('checked') == false ) {
-			console.log('fffff')
+			
+			return false;
+
 		} else {
 
 			if ( $(this).closest('div').find('input:radio:checked').attr('data-href') == '' ) {
+
 				$(this).closest('div').addClass('is-hidden');
 				$(this).closest('div').next('.form__section').show();
 				// Pagination
 				$('.pagination li').removeClass('active');
 				$('.pagination li').eq(current_page + 1).addClass('active');
 				current_page++;
+
 			} else {
+
 				document.location = $(this).closest('div').find('input[name="choice-input"]:checked').attr('data-href');
+
 			}
 
-			console.log('ggggg')
 		}
 
 		return false;
+	})
+
+	$('#send-question').click(function(){
+		$('#test-form').submit();
 	})
 
 });
