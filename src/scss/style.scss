@@ -92,6 +92,7 @@
 .page {
 	max-width: 375px;
 	margin: 0 auto;
+	padding-bottom: 52px;
 	background: url(../images/bg.png) center top no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
@@ -200,10 +201,15 @@ header {
 	}
 
 	.bottom__nav {
+		position: fixed;
+    	width: 100%;
+    	max-width: 375px;
+    	bottom: 0;
 		background: #fff;
 		border-top: 1px solid #b59648;
 		display: flex;
 		min-height: 48px;
+		z-index: 9;
 		align-self: center;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
@@ -416,8 +422,14 @@ header {
 				}
 
 .date__birth {
+	input#date {
+		font-size: 30px;
+    	text-align: center;
+    	font-family: 'Conv_Engine-Regular';
+    	letter-spacing: -2px;
+	}
 	.primary__btn {
-		margin-top: 150px;
+		margin-top: 50px;
 	}
 }
 

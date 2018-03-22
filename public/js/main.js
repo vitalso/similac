@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var current_page = 0;
+	var current_page = 1; // start from second circle in pagination
 
 	$("#date").mask("99.99.9999", {placeholder: "__.__.____" });
 
@@ -8,19 +8,15 @@ $(document).ready(function(){
 		type: 'inline',
 		modal: true
 	});
-	/*$(document).on('click', '.popup-modal-dismiss', function (e) {
-		e.preventDefault();
-		$.magnificPopup.close();
-	});*/
 
-	var steps = $('.choice__form .form__section').length;
+	// Steps
+	/*var steps = $('.choice__form .form__section').length;
 	for (i=1; i <= steps; i++) {
 		$('.pagination').append("<li><span></span></li>")
 	}
-	$('.pagination li:eq(0)').addClass('active');
-	
-	console.log(steps);
+	$('.pagination li:eq(0)').addClass('active');*/
 
+	// Checked checkbox
 	$('.warning__form input[type="checkbox"]').change(function(){
 		var status = $(this).prop('checked');
 
@@ -32,6 +28,7 @@ $(document).ready(function(){
 		console.log(status);
 	});
 
+	// Date of birth
 	$('#date-choice input:submit').click(function(){
 
 	    if( $('.date__birth input[type="text"]').val().length < 8 ) {
@@ -42,6 +39,7 @@ $(document).ready(function(){
 
 	});
 
+	// Toggle question
 	$('.form__section .next__btn').click(function(){
 
 		if ( $(this).closest('div').find('input:radio:eq(0)').prop('checked') == false &&  $(this).closest('div').find('input:radio:eq(1)').prop('checked') == false ) {
@@ -54,6 +52,7 @@ $(document).ready(function(){
 
 				$(this).closest('div').addClass('is-hidden');
 				$(this).closest('div').next('.form__section').show();
+
 				// Pagination
 				$('.pagination li').removeClass('active');
 				$('.pagination li').eq(current_page + 1).addClass('active');
