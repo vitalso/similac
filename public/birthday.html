@@ -20,9 +20,14 @@
       <header>Navigation Mom.life</header>
       <div class="content">
         <div class="content__header">
-          <div class="header__person">
-            <div class="person__name">Миша</div>
-            <div class="person__years">3 месяца</div>
+          <div class="person">
+            <!--.person__name Миша-->
+            <!--.person__years 3 месяца-->
+            <select name="person">
+              <option value="МИША, 3 месяца">МИША, 3 месяца</option>
+              <option value="МАША, 12 месяцев">МАША, 12 месяцев</option>
+              <option value="АЛЕКСИС, 8 месяцев">АЛЕКСИС, 8 месяцев</option>
+            </select>
           </div>
           <div class="header__logo"><a href="index.html"><img src="images/logo.png" alt="Similac Premium"></a></div>
         </div>
@@ -60,6 +65,14 @@
         </form>
         <p><a class="primary__btn is-disabled popup-modal-dismiss" href="birthday.html">Хорошо</a></p>
       </div>
+      <div id="old-year">
+        <div class="mfp-content popup">
+          <p class="brand__color">Ваш ребёнок старше 1 годика, попробуйте рассчитать смесь для малыша до 1 года.</p>
+          <p>
+            <button class="primary__btn">Пройти еще раз</button>
+          </p>
+        </div>
+      </div>
     </div>
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -67,6 +80,8 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <!-- Magnific popup-->
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Select-->
+    <script src="js/jquery.selectric.js"></script>
     <!-- Main script-->
     <script src="js/main.js"></script>
   </body>

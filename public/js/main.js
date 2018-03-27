@@ -9,13 +9,6 @@ $(document).ready(function(){
 		modal: true
 	});
 
-	// Steps
-	/*var steps = $('.choice__form .form__section').length;
-	for (i=1; i <= steps; i++) {
-		$('.pagination').append("<li><span></span></li>")
-	}
-	$('.pagination li:eq(0)').addClass('active');*/
-
 	// Checked checkbox
 	$('.warning__form input[type="checkbox"]').change(function(){
 		var status = $(this).prop('checked');
@@ -72,5 +65,8 @@ $(document).ready(function(){
 	$('#send-question').click(function(){
 		$('#test-form').submit();
 	})
+
+	// Select
+  	$('select').selectric();
 
 });
