@@ -290,6 +290,7 @@ header {
 
 		.primary__btn {
 			max-width: 233px;
+			height: 62px;
 			margin: 18px auto;
 			line-height: 54px;
 			display: block;
@@ -298,8 +299,9 @@ header {
 			font-family: 'Conv_Engine-Regular';
 			font-size: 32px;
 			color: #fff;
-			background-image: linear-gradient(to bottom, #e0cc79, #af954d);
-  			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+			background: url(../images/btn.svg) no-repeat center top;
+			//background-image: linear-gradient(to bottom, #e0cc79, #af954d);
+  			//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   			-webkit-transition: all .3s ease-in-out;
   			   -moz-transition: all .3s ease-in-out;
   			    -ms-transition: all .3s ease-in-out;
@@ -308,13 +310,15 @@ header {
   			-webkit-border-radius: 18px;
   			        border-radius: 18px;
   			&:hover {
-  				background-image: linear-gradient(to bottom, #af954d, #e0cc79);
+  				opacity: .8;
+  				//background-image: linear-gradient(to bottom, #af954d, #e0cc79);
   			}
   			&.light__btn {
   				max-width: 300px;
-  				background: #FFF;
+  				background: url(../images/btn-white.svg) no-repeat center top;
+  				//background: #FFF;
   				color: #d8b340;
-  				box-shadow: 0 3px 4px 0 rgba(207, 168, 132, 0.28);
+  				//box-shadow: 0 3px 4px 0 rgba(207, 168, 132, 0.28);
   			}
 		}
 
