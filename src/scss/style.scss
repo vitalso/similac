@@ -655,8 +655,6 @@ header {
 	align-items: center;
 	padding-left: 100px;
 		&.row-column {
-			-webkit-justify-content: space-evenly;
-			        justify-content: space-evenly;
 			-webkit-align-items: self-start;
 			        align-items: self-start;
 			-webkit-flex-direction: column;

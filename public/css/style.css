@@ -270,6 +270,7 @@ html {
 
 .page {
   max-width: 1024px;
+  min-height: 100vh;
   margin: 0 auto;
   padding-bottom: 52px;
   position: relative;
@@ -730,8 +731,6 @@ input[type="submit"] {
   align-items: center;
   padding-left: 100px; }
   .recomend.row-column {
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
     -webkit-align-items: self-start;
     align-items: self-start;
     -webkit-flex-direction: column;
