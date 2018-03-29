@@ -5,7 +5,13 @@ $(document).ready(function(){
 	$("#date").mask("99.99.9999", {placeholder: "__.__.____" });
 
 	$('a[href="#warning"]').magnificPopup({
-		type: 'inline'
+		type: 'inline',
+		fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
 	});
 
 	// Checked checkbox
