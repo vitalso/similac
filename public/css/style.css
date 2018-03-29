@@ -269,7 +269,7 @@ html {
   box-sizing: border-box; }
 
 .page {
-  /*max-width: 768px;*/
+  max-width: 1024px;
   margin: 0 auto;
   padding-bottom: 52px;
   position: relative;
@@ -370,10 +370,10 @@ header {
 .bottom__nav {
   position: fixed;
   width: 100%;
-  max-width: 768px;
+  max-width: 1024px;
   bottom: 0;
   left: 50%;
-  margin-left: -384px;
+  margin-left: -512px;
   background: #fff;
   border-top: 1px solid #b59648;
   display: flex;
@@ -684,14 +684,14 @@ input[type="submit"] {
 
 .buy__btn {
   width: 100%;
-  max-width: 768px;
+  max-width: 1024px;
   line-height: 52px;
   height: 52px;
   position: fixed;
   left: 50%;
   margin: 0;
   bottom: 0;
-  margin-left: -384px;
+  margin-left: -512px;
   z-index: 9;
   background-image: linear-gradient(to bottom, #e0cc79, #af954d);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -729,6 +729,14 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   padding-left: 100px; }
+  .recomend.row-column {
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -webkit-align-items: self-start;
+    align-items: self-start;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .recomend__img {
   width: 100%;
@@ -795,7 +803,7 @@ input[type="submit"] {
       background: url(../images/popup.svg) no-repeat; }
 
 /* Media query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .bottom__nav, .buy__btn {
     left: 0;
     margin-left: 0; } }

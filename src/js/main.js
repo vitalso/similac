@@ -77,4 +77,12 @@
   		return false;
   	})
 
+  	// Select attribute
+  	$('#person').change(function(){
+  		$('#person option:selected').each(function() {
+	    	var select_data = $(this).attr('data-id');
+	    	document.location = '?child='+select_data;
+	    });
+  	})
+
 });
