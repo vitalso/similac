@@ -269,7 +269,7 @@ html {
   box-sizing: border-box; }
 
 .page {
-  max-width: 768px;
+  /*max-width: 768px;*/
   margin: 0 auto;
   padding-bottom: 52px;
   position: relative;
@@ -286,6 +286,8 @@ header {
   color: #FFF; }
 
 .content {
+  max-width: 768px;
+  margin: 0 auto;
   padding: 34px 20px 0 20px;
   overflow: hidden; }
 
@@ -370,6 +372,8 @@ header {
   width: 100%;
   max-width: 768px;
   bottom: 0;
+  left: 50%;
+  margin-left: -384px;
   background: #fff;
   border-top: 1px solid #b59648;
   display: flex;
@@ -582,7 +586,7 @@ input[type="submit"] {
     color: #b49547;
     background-image: url(../images/arrow-right.svg);
     background-repeat: no-repeat;
-    background-position: 95% center;
+    background-position: 97% center;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -681,10 +685,14 @@ input[type="submit"] {
 .buy__btn {
   width: 100%;
   max-width: 768px;
+  line-height: 52px;
+  height: 52px;
   position: fixed;
   margin: 0;
   bottom: 0;
   z-index: 9;
+  background-image: linear-gradient(to bottom, #e0cc79, #af954d);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0;
   border-radius: 0; }
 
@@ -758,7 +766,8 @@ input[type="submit"] {
   left: 0;
   font-size: 24px;
   line-height: 30px;
-  text-align: center; }
+  text-align: center;
+  z-index: 9; }
   #old-year .brand__color {
     text-align: center;
     margin-bottom: 50px; }
@@ -771,7 +780,7 @@ input[type="submit"] {
     left: 0;
     background: rgba(181, 150, 71, 0.3); }
   #old-year .popup {
-    top: 35%;
+    top: 50%;
     margin-top: -150px; }
     #old-year .popup:after {
       content: "";
@@ -784,3 +793,7 @@ input[type="submit"] {
       background: url(../images/popup.svg) no-repeat; }
 
 /* Media query */
+@media screen and (max-width: 768px) {
+  .bottom__nav {
+    left: 0;
+    margin-left: 0; } }

@@ -5,8 +5,7 @@
 	$("#date").mask("99.99.9999", {placeholder: "__.__.____" });
 
 	$('a[href="#warning"]').magnificPopup({
-		type: 'inline',
-		modal: true
+		type: 'inline'
 	});
 
 	// Checked checkbox
@@ -68,5 +67,14 @@
 
 	// Select
   	$('select').selectric();
+
+  	// Old year popup
+  	$('#old-year , .test-again').click(function(){  		
+  		$('#old-year').hide();
+  	})
+
+  	$('#old-year .popup').click(function(){
+  		return false;
+  	})
 
 });
