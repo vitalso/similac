@@ -604,8 +604,10 @@ header {
 	line-height: 52px;
     height: 52px;
 	position: fixed;
+	left: 50%;
 	margin: 0;
 	bottom: 0;
+	margin-left: -384px;
 	z-index: 9;
 	background-image: linear-gradient(to bottom, #e0cc79, #af954d);
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -737,7 +739,7 @@ header {
 
 @media screen and (max-width: 768px) {
 
-	.bottom__nav {
+	.bottom__nav , .buy__btn {
 		left: 0;
 		margin-left: 0;
 	}
