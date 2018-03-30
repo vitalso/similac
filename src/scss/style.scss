@@ -147,6 +147,9 @@ header {
 	.header__logo {
 		margin-left: auto;
 		max-width: 82px;
+			img {
+				width: 100%;
+			}
 	}
 
 	.nav {

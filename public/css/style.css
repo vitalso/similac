@@ -316,6 +316,8 @@ header {
 .header__logo {
   margin-left: auto;
   max-width: 82px; }
+  .header__logo img {
+    width: 100%; }
 
 .nav {
   border-radius: 8px;
