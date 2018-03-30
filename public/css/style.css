@@ -580,7 +580,8 @@ input[type="submit"] {
   margin-top: 50px; }
 
 .products__item {
-  margin-bottom: 14px; }
+  margin-bottom: 14px;
+  min-height: 73px; }
   .products__item a {
     min-height: 73px;
     border-radius: 4px;
