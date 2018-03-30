@@ -785,7 +785,7 @@ input[type="submit"] {
   font-family: 'Conv_GothamPro-Medium'; }
 
 .min-height {
-  min-height: 230px; }
+  min-height: 260px; }
 
 #old-year {
   width: 100%;
@@ -956,4 +956,4 @@ input[type="submit"] {
       width: 300px;
       height: 300px; }
   .min-height {
-    min-height: 350px; } }
+    min-height: 380px; } }
