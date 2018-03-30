@@ -339,7 +339,7 @@ header {
       background-image: url(../images/similac-tablet.svg);
       background-size: 22px 27px; }
     .nav a.calculate {
-      background-image: url(../images/calculator-tablet.png);
+      background-image: url(../images/calculator.svg);
       background-size: 24px 21px; }
 
 .index__product {
@@ -402,10 +402,10 @@ header {
       background-image: url(../images/similac-tablet.svg);
       background-size: 17px 24px; }
     .bottom__nav a:nth-child(2) {
-      background-image: url(../images/calculator-tablet.png);
+      background-image: url(../images/calculator.svg);
       background-size: 21px 21px; }
     .bottom__nav a:nth-child(3) {
-      background-image: url(../images/products@3x.png);
+      background-image: url(../images/similac.svg);
       background-size: 17px 24px; }
     .bottom__nav a:hover {
       background-color: #fbf8eb; }
