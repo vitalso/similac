@@ -7,11 +7,11 @@
 	$('a[href="#warning"]').magnificPopup({
 		type: 'inline',
 		fixedContentPos: true,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
+	    fixedBgPos: true,
+	    overflowY: 'auto',
+	    closeBtnInside: true,
+	    preloader: false,
+	    midClick: true,
 	});
 
 	// Checked checkbox
@@ -19,9 +19,9 @@
 		var status = $(this).prop('checked');
 
 		if(status == true) {
-			$('.popup-modal-dismiss').removeClass('is-disabled');
+			$(this).closest('div').next('p').find('.popup-modal-dismiss').removeClass('is-disabled');
 		} else {
-			$('.popup-modal-dismiss').addClass('is-disabled');
+			$(this).closest('div').next('p').find('.popup-modal-dismiss').addClass('is-disabled');
 		}
 		console.log(status);
 	});

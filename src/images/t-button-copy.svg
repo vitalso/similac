@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="78px" viewBox="0 0 335 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>E3F778B3-276C-4237-B576-35311E2648E6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 98 0 0 345 0 345 98"></polygon>
+        <path d="M318.451648,24.724485 C315.322788,17.3672753 303.65456,16.0271536 299.38413,15.8036049 C295.434952,15.5964419 189.623003,14.2258895 173.854684,14.0222378 L173.854684,14 C173.304817,14 172.748974,14.0011704 172.196119,14.0011704 C172.18566,14.0011704 172.166235,14.0011704 172.15727,14 L172.15727,14.0011704 C119.404451,14.0105337 58.1257122,14.4646536 42.3544049,16.4496723 C39.8097781,16.7703652 33.8165319,18.4557584 28.97681,24.252809 C24.1385823,30.0486891 23,49.6870318 23,49.6870318 C23,49.6870318 24.4224808,65.9440543 27.5543292,73.3024345 C30.6846834,80.6596442 42.3544049,81.9962547 46.6248356,82.2198034 C50.5725186,82.4257959 156.299299,83.7764513 172.134857,83.9789326 L172.134857,84 C172.699665,84 173.270451,84 173.836753,84 C173.841236,84 173.848707,84 173.854684,84 C226.601526,84 287.865323,83.5564139 303.635136,81.5749064 C306.179763,81.2542135 312.174503,79.5688202 317.014225,73.7741105 C321.855441,67.9782303 323,48.3398876 323,48.3398876 C323,48.3398876 321.582002,32.0828652 318.451648,24.724485" id="path-3"></path>
+        <filter x="-2.3%" y="-7.1%" width="104.7%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.201766304 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="t-Button-Copy">
+            <g id="start_btn" transform="translate(-6.000000, -13.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <g id="Fill-1" mask="url(#mask-2)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
